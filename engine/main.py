@@ -2,7 +2,7 @@
 from bs4 import BeautifulSoup as bs
 # from selenium import webdriver as wd
 # from selenium.webdriver.chrome.options import Options
-# import time
+import time
 
 # brandsModels = []
 # types = []
@@ -59,10 +59,13 @@ from core.WebScraper import WebScraper
 
 webScraper = WebScraper()
 
-options = webScraper.createOptions(['--headless', '--no-sandbox', '--disable-dev-shm-usage'])
-driver = webScraper.instantiateDriver(options)
+options = webScraper.createOptions(['-headless', '-no-sandbox'])
+# options = webScraper.createOptions(['--headless'])
+# driver = webScraper.instantiateDriver(options)
 link = webScraper.buildLink('https://www.autowereld.nl', ['/saab'], {'mdl': 'saab_900|saab_900-cabrio|saab_900-coupe'})
-content = webScraper.getContent(driver, link)
+
+content = webScraper.getContent(link)
+
 
 soup = bs(content, features="html.parser")
 

@@ -1,0 +1,334 @@
+1602271979951	geckodriver	INFO	Listening on 127.0.0.1:56417
+1602271980039	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-sandbox" "--new-instance" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoZ32mY"
+*** You are running in headless mode.
+1602271981533	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1602271982508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1602271982509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1602271982509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1602271982509	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370034,name=PContent::Msg_UpdateSharedData) Channel error: cannot send/recv
+
+[Parent 22759, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-rPuUtT/firefox-75.0+build3/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 19
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x37005A,name=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+1602271984284	addons.xpi	WARN	Exception running bootstrap method startup on formautofill@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602271984285	addons.xpi	WARN	Exception running bootstrap method startup on screenshots@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602271984285	addons.xpi	WARN	Exception running bootstrap method startup on doh-rollout@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602271984285	addons.xpi	WARN	Exception running bootstrap method startup on webcompat@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+Exiting due to channel error.
+Exiting due to channel error.
+1602271985656	Marionette	INFO	Listening on port 56422
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://browser/content/browser.js, line 7994: TypeError: browser.messageManager is null
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  SessionStore: flushing all windows
+          Phase: quit-application-granted
+          State: {"total":-1,"current":-1}
+WARNING: TypeError: mm is null
+WARNING: flush@resource:///modules/sessionstore/TabStateFlusher.jsm:97:5
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:127:28
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:31:36
+flushAllWindowsAsync@resource:///modules/sessionstore/SessionStore.jsm:1908:50
+ssi_onQuitApplicationGranted/<@resource:///modules/sessionstore/SessionStore.jsm:1832:32
+trigger@resource://gre/modules/AsyncShutdown.jsm:723:23
+_wait@resource://gre/modules/AsyncShutdown.jsm:875:15
+wait@resource://gre/modules/AsyncShutdown.jsm:856:34
+observe@resource://gre/modules/AsyncShutdown.jsm:533:10
+observe@resource:///modules/ContentCrashHandlers.jsm:178:28
+
+JavaScript error: resource:///modules/sessionstore/TabStateFlusher.jsm, line 97: TypeError: mm is null
+1602271986603	Marionette	INFO	Stopped listening on port 56422
+1602272206996	geckodriver	INFO	Listening on 127.0.0.1:56607
+1602272207021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-sandbox" "--new-instance" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLq4DFT"
+*** You are running in headless mode.
+1602272207620	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1602272208461	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1602272208461	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1602272208462	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1602272208462	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370034,name=PContent::Msg_UpdateSharedData) Channel error: cannot send/recv
+
+[Parent 22987, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-rPuUtT/firefox-75.0+build3/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 19
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x37005A,name=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+1602272209417	addons.xpi	WARN	Exception running bootstrap method startup on screenshots@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272209418	addons.xpi	WARN	Exception running bootstrap method startup on webcompat@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272209418	addons.xpi	WARN	Exception running bootstrap method startup on doh-rollout@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272209418	addons.xpi	WARN	Exception running bootstrap method startup on formautofill@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+Exiting due to channel error.
+Exiting due to channel error.
+1602272210727	Marionette	INFO	Listening on port 56612
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://browser/content/browser.js, line 7994: TypeError: browser.messageManager is null
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  SessionStore: flushing all windows
+          Phase: quit-application-granted
+          State: {"total":-1,"current":-1}
+WARNING: TypeError: mm is null
+WARNING: flush@resource:///modules/sessionstore/TabStateFlusher.jsm:97:5
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:127:28
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:31:36
+flushAllWindowsAsync@resource:///modules/sessionstore/SessionStore.jsm:1908:50
+ssi_onQuitApplicationGranted/<@resource:///modules/sessionstore/SessionStore.jsm:1832:32
+trigger@resource://gre/modules/AsyncShutdown.jsm:723:23
+_wait@resource://gre/modules/AsyncShutdown.jsm:875:15
+wait@resource://gre/modules/AsyncShutdown.jsm:856:34
+observe@resource://gre/modules/AsyncShutdown.jsm:533:10
+observe@resource:///modules/ContentCrashHandlers.jsm:178:28
+
+JavaScript error: resource:///modules/sessionstore/TabStateFlusher.jsm, line 97: TypeError: mm is null
+1602272211176	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602272212570	Marionette	INFO	Stopped listening on port 56612
+1602272670252	geckodriver	INFO	Listening on 127.0.0.1:56791
+1602272670278	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-no-sandbox" "--new-instance" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileE9YmME"
+*** You are running in headless mode.
+1602272670890	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1602272671716	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1602272671716	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1602272671716	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1602272671717	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370034,name=PContent::Msg_UpdateSharedData) Channel error: cannot send/recv
+
+[Parent 23243, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-rPuUtT/firefox-75.0+build3/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 19
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x37005A,name=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+1602272672646	addons.xpi	WARN	Exception running bootstrap method startup on webcompat@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272672647	addons.xpi	WARN	Exception running bootstrap method startup on formautofill@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272672647	addons.xpi	WARN	Exception running bootstrap method startup on doh-rollout@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272672648	addons.xpi	WARN	Exception running bootstrap method startup on screenshots@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+Exiting due to channel error.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+Exiting due to channel error.
+1602272673854	Marionette	INFO	Listening on port 56796
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://browser/content/browser.js, line 7994: TypeError: browser.messageManager is null
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  SessionStore: flushing all windows
+          Phase: quit-application-granted
+          State: {"total":-1,"current":-1}
+WARNING: TypeError: mm is null
+WARNING: flush@resource:///modules/sessionstore/TabStateFlusher.jsm:97:5
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:127:28
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:31:36
+flushAllWindowsAsync@resource:///modules/sessionstore/SessionStore.jsm:1908:50
+ssi_onQuitApplicationGranted/<@resource:///modules/sessionstore/SessionStore.jsm:1832:32
+trigger@resource://gre/modules/AsyncShutdown.jsm:723:23
+_wait@resource://gre/modules/AsyncShutdown.jsm:875:15
+wait@resource://gre/modules/AsyncShutdown.jsm:856:34
+observe@resource://gre/modules/AsyncShutdown.jsm:533:10
+observe@resource:///modules/ContentCrashHandlers.jsm:178:28
+
+JavaScript error: resource:///modules/sessionstore/TabStateFlusher.jsm, line 97: TypeError: mm is null
+1602272674336	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602272675712	Marionette	INFO	Stopped listening on port 56796
+1602272764798	geckodriver	INFO	Listening on 127.0.0.1:56867
+1602272764842	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-headless" "-no-sandbox" "--new-instance" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRIoTtS"
+*** You are running in headless mode.
+1602272765482	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1602272765520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1602272765520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1602272765520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1602272765520	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370034,name=PContent::Msg_UpdateSharedData) Channel error: cannot send/recv
+
+[Parent 23450, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-rPuUtT/firefox-75.0+build3/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 19
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x37005A,name=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+1602272766535	addons.xpi	WARN	Exception running bootstrap method startup on doh-rollout@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272766536	addons.xpi	WARN	Exception running bootstrap method startup on formautofill@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272766537	addons.xpi	WARN	Exception running bootstrap method startup on screenshots@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602272766538	addons.xpi	WARN	Exception running bootstrap method startup on webcompat@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+Exiting due to channel error.
+Exiting due to channel error.
+1602272767706	Marionette	INFO	Listening on port 56872
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://browser/content/browser.js, line 7994: TypeError: browser.messageManager is null
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  SessionStore: flushing all windows
+          Phase: quit-application-granted
+          State: {"total":-1,"current":-1}
+WARNING: TypeError: mm is null
+WARNING: flush@resource:///modules/sessionstore/TabStateFlusher.jsm:97:5
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:127:28
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:31:36
+flushAllWindowsAsync@resource:///modules/sessionstore/SessionStore.jsm:1908:50
+ssi_onQuitApplicationGranted/<@resource:///modules/sessionstore/SessionStore.jsm:1832:32
+trigger@resource://gre/modules/AsyncShutdown.jsm:723:23
+_wait@resource://gre/modules/AsyncShutdown.jsm:875:15
+wait@resource://gre/modules/AsyncShutdown.jsm:856:34
+observe@resource://gre/modules/AsyncShutdown.jsm:533:10
+observe@resource:///modules/ContentCrashHandlers.jsm:178:28
+
+JavaScript error: resource:///modules/sessionstore/TabStateFlusher.jsm, line 97: TypeError: mm is null
+1602272769537	Marionette	INFO	Stopped listening on port 56872
+1602273396209	geckodriver	INFO	Listening on 127.0.0.1:57115
+1602273396246	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-headless" "-no-sandbox" "--new-instance" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile83yl4j"
+*** You are running in headless mode.
+1602273396911	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1602273396950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1602273396950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1602273396950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1602273396950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+Exiting due to channel error.
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370034,name=PContent::Msg_UpdateSharedData) Channel error: cannot send/recv
+
+[Parent 24169, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-rPuUtT/firefox-75.0+build3/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 19
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x37005A,name=PContent::Msg_GMPsChanged) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x370022,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+Extension error: extension.persistentListeners is undefined resource://gre/modules/ExtensionCommon.jsm:2357 :: clearPrimedListeners@resource://gre/modules/ExtensionCommon.jsm:2357:39
+build@chrome://extensions/content/parent/ext-backgroundPage.js:73:20
+
+1602273398084	addons.xpi	WARN	Exception running bootstrap method startup on doh-rollout@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602273398085	addons.xpi	WARN	Exception running bootstrap method startup on webcompat@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602273398086	addons.xpi	WARN	Exception running bootstrap method startup on screenshots@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+1602273398087	addons.xpi	WARN	Exception running bootstrap method startup on formautofill@mozilla.org: TypeError: extension.persistentListeners is undefined(resource://gre/modules/ExtensionCommon.jsm:2357:39) JS Stack trace: clearPrimedListeners@ExtensionCommon.jsm:2357:39
+build@ext-backgroundPage.js:73:20
+Exiting due to channel error.
+1602273399321	Marionette	INFO	Listening on port 57120
+Exiting due to channel error.
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+JavaScript error: chrome://browser/content/browser.js, line 7994: TypeError: browser.messageManager is null
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  SessionStore: flushing all windows
+          Phase: quit-application-granted
+          State: {"total":-1,"current":-1}
+WARNING: TypeError: mm is null
+WARNING: flush@resource:///modules/sessionstore/TabStateFlusher.jsm:97:5
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:127:28
+flushWindow@resource:///modules/sessionstore/TabStateFlusher.jsm:31:36
+flushAllWindowsAsync@resource:///modules/sessionstore/SessionStore.jsm:1908:50
+ssi_onQuitApplicationGranted/<@resource:///modules/sessionstore/SessionStore.jsm:1832:32
+trigger@resource://gre/modules/AsyncShutdown.jsm:723:23
+_wait@resource://gre/modules/AsyncShutdown.jsm:875:15
+wait@resource://gre/modules/AsyncShutdown.jsm:856:34
+observe@resource://gre/modules/AsyncShutdown.jsm:533:10
+observe@resource:///modules/ContentCrashHandlers.jsm:178:28
+
+JavaScript error: resource:///modules/sessionstore/TabStateFlusher.jsm, line 97: TypeError: mm is null
+1602273399816	Marionette	WARN	TLS certificate errors will be ignored for this session
+1602273401228	Marionette	INFO	Stopped listening on port 57120
