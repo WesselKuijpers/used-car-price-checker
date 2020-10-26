@@ -7,95 +7,58 @@ import time
 from shutil import which
 
 class WebScraper:
-    chrome_arguments = []
-    chrome_options = None
-    baseUrl = ""
-    subUrls = []
-    params = {}
-    driver = None
-    url = ""
-    content = None
+    def __init__(self, base_url, sub_urls, url_params, *args):
+        self.__chrome_arguments = args
+        self.__base_url = base_url
+        self.__sub_urls = sub_urls
+        self.__url_params = url_params
+        self.__url = ""
+        self.__content = ""
+        self.__driver = None
+        self.__chrome_options = Options()
 
-    def scrape(self):
-        #
-        return
+        self.__scrape()
 
-    def createOptions(self, arguments=[]):
-        # cProfile = wd.FirefoxProfile()
-        options = Options()
-        # options.profile = cProfile
-        # options.binary = which("firefox")
-        # options.headless = True
-        
-        for argument in arguments:
-            options.add_argument(argument)
-        
-        return options
+    @property
+    def content(self):
+        if (self.__content != ""): 
+            return self.__content
+        else:
+            return Exception("Content is empty!")
+
+    def __scrape(self):
+        self.__create_options()
+        self.__instantiate_driver()
+        self.__build_link()
+        self.__get_content()
+
+    def __create_options(self):
+        for argument in self.__chrome_arguments:
+            self.__chrome_options.add_argument(argument)
     
-    def instantiateDriver(self, options):
-        # cap = DesiredCapabilities().FIREFOX
-        # cap["marionette"] = True
-        driver = wd.Chrome("./chromedriver/cd", options=options)
-        # driver = wd.Firefox(options=options)
-        # driver = wd.Chrome(options=options)
-        return driver
+    def __instantiate_driver(self):
+        self.__driver = wd.Chrome(executable_path="/usr/bin/chromedriver", options=self.__chrome_options)
     
-    def buildLink(self, baseUrl, subUrls = [], params={}):
-        url = baseUrl
-
-        if (len(subUrls) != 0):
-            for subUrl in subUrls:
-                if (subUrl[0] != '/'):
-                    url += '/'
-                url += subUrl
+    def __build_link(self):
+        if (len(self.__sub_urls) != 0):
+            for sub_url in self.__sub_urls:
+                if (sub_url[0] != '/'):
+                    self.__url += '/'
+                self.__url += sub_url
         
-        if (len(params) != 0):
-            print(params)
-            url += '/'
-            for k,v in params.items():
-                url += '?' + k
-                url += '=' + v
-
-        return url
+        if (len(self.__url_params) != 0):
+            self.__url += '/'
+            for k,v in self.__url_params.items():
+                self.__url += '?' + k
+                self.__url += '=' + v
     
-    def getContent(self, url):
-        content = ""
+    def __get_content(self):
         tries = 0
-        print(url)
 
-        # while (len(content) == 0):
-            # print(tries)
-            # print(content)
-
-            # if (tries != 0):
-            #     time.sleep(10)
-            
-            # if (tries >= 10):
-            #     raise Exception("# of tries exceeded 10")
-            # else:
-            #     print(15)
-            #     try:
-            #         print(1)
-            #         driver.get(url)
-            #         print(2)
-            #         content = driver.page_source
-            #         print(3)
-            #         tries += 1
-            #         print(4)
-            #     except Exception as err:
-            #         print(err)
-            #         tries += 1
-        
-        while content == "":
-            print(tries)
-            options = self.createOptions(['-headless', '-no-sandbox'])
-            driver = self.instantiateDriver(options)
-            driver.get(url)
+        while self.__content == "":
+            self.__driver.get(self.__url)
             time.sleep(5)
-            content = driver.page_source
-            print(content)
+            self.content = self.__driver.page_source
             tries += 1
-            driver.quit()
+            self.__driver.quit()
 
-        
-        return content
