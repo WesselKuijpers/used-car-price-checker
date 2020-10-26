@@ -1,3 +1,4 @@
 venv/*
 .vscode/*
-*/_pycach_
+*/_pycache_
+*.log
